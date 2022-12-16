@@ -1,0 +1,20 @@
+import * as firebase from "firebase";
+import "firebase/firestore";
+const firebaseConfig = {
+    apiKey: "AIzaSyDMJ8X0PzOnuz7VJXW39C4EsCsw-k1vjUg",
+    authDomain: "studygram-4baeb.firebaseapp.com",
+    databaseURL: "https://studygram-4baeb-default-rtdb.firebaseio.com/",
+    projectId: "studygram-4baeb",
+    storageBucket: "studygram-4baeb.appspot.com",
+    messagingSenderId: "323261323808",
+    appId: "1:323261323808:web:72071b9bea4dde1617ba45",
+    measurementId: "G-N087N6P0KZ"
+  };
+
+firebase.initializeApp(firebaseConfig);
+
+const db = firebase.firestore();
+const auth = firebase.auth();
+const storage = firebase.storage();
+
+export { db, auth, storage };
